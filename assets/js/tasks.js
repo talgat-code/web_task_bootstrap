@@ -90,7 +90,7 @@ function sumEvenNumbers() {
 
 // Task 7. Finds max, min and average of the array and shows them with alert().
 function showArrayResults() {
-    const numbers = [10, 20, 30, 40, 50];
+    const numbers = [60, 20, 30, 40, 50];
     let max = numbers[0];
     let min = numbers[0];
     let sum = 0;
