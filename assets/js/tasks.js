@@ -10,7 +10,6 @@ function showUsername() {
     }
 }
 
-
 // Task 2. Calculates payment = hours * rate.
 function showWage() {
     const hours = parseFloat(document.getElementById("task2-hours").value.replace(",", "."));
@@ -104,9 +103,18 @@ function showArrayResults() {
         }
         sum = sum + numbers[i];
     }
+    // for (let i = 0; i < numbers.length; i++) {
+    //     if (numbers[i] < numbers[i + 1]) (
+    //         numbers[i + 1] = numbers[i];
+    //     );
+
+
+        numbers.sort();
+
+    }
     const average = sum / numbers.length;
     alert("Maximum: " + max + "\nMinimum: " + min + "\nAverage: " + average);
-}
+
 
 // Task 8. Finds unique words in the text, sorts them and shows the list.
 function showUniqueWords() {
@@ -130,6 +138,5 @@ function showUniqueWords() {
     }
 
     words.sort();
-    console.log(words);
     document.getElementById("task8-result").textContent = "['" + words.join("', '") + "']";
 }
