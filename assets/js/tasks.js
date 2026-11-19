@@ -107,13 +107,12 @@ function showArrayResults() {
     //     if (numbers[i] < numbers[i + 1]) (
     //         numbers[i + 1] = numbers[i];
     //     );
+    numbers.sort();
+    console.log(numbers);
 
-
-        numbers.sort();
-
-    }
-    const average = sum / numbers.length;
-    alert("Maximum: " + max + "\nMinimum: " + min + "\nAverage: " + average);
+}
+const average = sum / numbers.length;
+alert("Maximum: " + max + "\nMinimum: " + min + "\nAverage: " + average);
 
 
 // Task 8. Finds unique words in the text, sorts them and shows the list.
